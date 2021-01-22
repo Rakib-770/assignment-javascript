@@ -2,7 +2,7 @@
 
 
 
-//Task_1: Kilometer To Meter
+//Function_1: Kilometer To Meter
 
 function kilometerToMeter(kilo){
 
@@ -20,7 +20,7 @@ console.log(meter);
 
 
 
-//Task_2: Budget Calculator
+//Function_2: Budget Calculator
 
 function budgetCalculator(watch, phone, laptop){
 
@@ -30,10 +30,10 @@ function budgetCalculator(watch, phone, laptop){
     }
     else{
         watchTotal = watch * 50;
-    phoneTotal = phone * 100;
-    laptopTotal = laptop * 500;
-    total = watchTotal + phoneTotal + laptopTotal;
-    return total;
+        phoneTotal = phone * 100;
+        laptopTotal = laptop * 500;
+        total = watchTotal + phoneTotal + laptopTotal;
+        return total;
     }  
 }
 console.log(total);
@@ -41,7 +41,7 @@ console.log(total);
 
 
 
-// //Task_3: Hotel Cost
+//Function_3: Hotel Cost
 
 function hotelCost(days){
 
@@ -71,7 +71,7 @@ console.log(totalCost);
 
 
 
-// //Task_4: Mega Friend
+//Function_4: Mega Friend
 
 function megaFriend(array){
     maximum = array[0];
@@ -81,6 +81,6 @@ function megaFriend(array){
         maximum = element;
         }
     }
-    return maximum;
+        return maximum;
 }
 console.log(maximum);
