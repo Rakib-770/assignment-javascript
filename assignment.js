@@ -1,43 +1,77 @@
+// https://github.com/Rakib-770/assignment-javascript
+
+
+
 //Task_1: Kilometer To Meter
 
 function kilometerToMeter(kilo){
-    meter = kilo * 1000;
-    return meter;
+
+    if(kilo<0){
+        meter = "Distance can not be negative.";
+        return meter;
+    }
+    else{
+        meter = kilo * 1000;
+        return meter;
+    } 
 }
+console.log(meter);
+
+
 
 
 //Task_2: Budget Calculator
 
 function budgetCalculator(watch, phone, laptop){
-    watchTotal = watch * 50;
+
+    if(watch<0 || phone<0 || laptop<0){
+        total = "Please insert a positive value";
+        return total;
+    }
+    else{
+        watchTotal = watch * 50;
     phoneTotal = phone * 100;
     laptopTotal = laptop * 500;
     total = watchTotal + phoneTotal + laptopTotal;
     return total;
+    }  
 }
+console.log(total);
 
-//Task_3: Hotel Cost
+
+
+
+// //Task_3: Hotel Cost
 
 function hotelCost(days){
-    if (days <=10){
-        cost = 100;
-        totalCost = days * cost;
-    }
-    else if(days >10 && days <=20) {
-        cost = 80;
-        totalCost = (days * cost) +200;
-        
+
+    if(days<0){
+        totalCost = "Please insert a positive value";
     }
     else{
-        cost = 50;
-        totalCost = (days * cost) +800;
-    }
-    
-    return totalCost;
+        if (days <=10){
+            cost = 100;
+            totalCost = days * cost;
+        }
+        else if(days >10 && days <=20) {
+            cost = 80;
+            totalCost = (days * cost) +200;
+            
+        }
+        else{
+            cost = 50;
+            totalCost = (days * cost) +800;
+        }
+        
+        return totalCost;
+    }   
 }
+console.log(totalCost);
 
 
-//Task_4: Mega Friend
+
+
+// //Task_4: Mega Friend
 
 function megaFriend(array){
     maximum = array[0];
@@ -49,3 +83,4 @@ function megaFriend(array){
     }
     return maximum;
 }
+console.log(maximum);
